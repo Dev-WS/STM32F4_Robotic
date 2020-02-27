@@ -6,12 +6,12 @@
   ******************************************************************************
 */
 
-#include <string.h>
-#include <test.h>
 #include "stm32f4xx.h"
 #include "stm32f4_discovery.h"
 #include "ssd1306.h"
 #include "horse_anim.h"
+#include <string.h>
+#include <test.h>
 
 UART_HandleTypeDef uart;
 SPI_HandleTypeDef hspi2;

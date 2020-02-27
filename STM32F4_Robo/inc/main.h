@@ -22,13 +22,4 @@ void send_string(char* s);
 void receive_string(uint8_t* x);
 void hardware_init();
 
-
-UART_HandleTypeDef uart;
-SPI_HandleTypeDef hspi2;
-I2C_HandleTypeDef hi2c1;
-TIM_HandleTypeDef htim1;
-GPIO_InitTypeDef gpio;
-
-
-
 #endif

@@ -17,7 +17,7 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef* timHandle);
 void TIM1_Init();
 void send_string(char* s);
 void receive_string(uint8_t* x);
-
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim);
 
 void hardware_init();
 

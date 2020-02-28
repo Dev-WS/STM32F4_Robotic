@@ -92,6 +92,15 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef* timHandle)
 }
 
 
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+ if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_5) == GPIO_PIN_RESET)
+ HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+ else
+ HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+}
+
+
 int main(void)
 {
 	HAL_Init();
